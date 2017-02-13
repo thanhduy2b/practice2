@@ -2,9 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 
-//import DetailForm from './components/detail.js';
-//import CreateForm from './components/create.js';
-
 // Define TaskListHeader sub-component
 class TaskListHeader extends React.Component {
 	render() {
