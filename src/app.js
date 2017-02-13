@@ -75,6 +75,7 @@ class TaskManagerApp extends React.Component {
             <div>
                 <TaskListHeader />
                 <TaskList items={this.state.items} />
+                <Link to="/create">Create New Task</Link>
             </div>
         );
     }
