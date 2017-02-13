@@ -5,7 +5,7 @@ var webpack = require('webpack');
  */
 var config = {
   devtool: 'eval-source-map',
-  entry:  __dirname + "/src/index.js",
+  entry:  __dirname + "/src/main.js",
   output: {
     path: __dirname + "/public",
     filename: "bundle.js"
