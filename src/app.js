@@ -46,7 +46,13 @@ class TaskList extends React.Component {
 class CreateForm extends React.Component {
     render() {
         return (
-            <div>This is the create form.</div>
+            <div>
+                <h2>New Task:</h2>
+                <form>
+                    <input type='text' ref='item' />
+                    <input type='submit' value='Add'/>
+                </form>
+            </div>
         );
     }
 }
@@ -64,7 +70,7 @@ class DetailForm extends React.Component {
 class TaskManagerApp extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {items: ['Task item #1', 'Task item #2', 'Task item #3', 'Task item #4']}
+        this.state={items: ['Task item #1', 'Task item #2', 'Task item #3', 'Task item #4']}
     }
 
     render() {
@@ -80,10 +86,10 @@ class TaskManagerApp extends React.Component {
 
 // render TaskManagerApp component
 render(
-    <Router history = {browserHistory}>
-        <Route path = "/" component = {TaskManagerApp} />
-        <Route path = "detail" component = {DetailForm} />
-        <Route path = "create" component = {CreateForm} />
+    <Router history={browserHistory}>
+        <Route path="/" component={TaskManagerApp} />
+        <Route path="detail" component={DetailForm} />
+        <Route path="create" component={CreateForm} />
     </Router>,
     document.getElementById('task_manager')
 );
