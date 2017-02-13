@@ -38,7 +38,7 @@ class TaskList extends React.Component {
             <ul>
                 {this.props.items.map(item => 
                 (
-                    <TaskListItem>{item}</TaskListItem>
+                    <TaskListItem><Link to="/detail">{item}</Link></TaskListItem>
                 ))}
             </ul>
         );
@@ -84,9 +84,8 @@ class TaskManagerApp extends React.Component {
 // render TaskManagerApp component
 render(
     <Router history = {browserHistory}>
-        <Route path = "/" component = {TaskManagerApp}>
-            <Route path = "detail" component = {DetailForm} />
-        </Route>
+        <Route path = "/" component = {TaskManagerApp} />
+        <Route path = "detail" component = {DetailForm} />
         <Route path = "create" component = {CreateForm} />
     </Router>,
     document.getElementById('task_manager')
