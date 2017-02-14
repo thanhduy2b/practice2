@@ -33,7 +33,7 @@ class TaskList extends React.Component {
     render() {
         return (
             <ul>
-                {this.props.items.map(item => 
+                {this.props.items.map(item =>
                 (
                     <TaskListItem><Link to="/detail">{item}</Link></TaskListItem>
                 ))}
@@ -89,7 +89,7 @@ render(
     <Router history={browserHistory}>
         <Route path="/" component={TaskManagerApp} />
         <Route path="detail" component={DetailForm} />
-        <Route path="create" component={CreateForm} />
+        <Route path="create" component={CreateForm} onLeave={confirm("Are you want to leave?")} />
     </Router>,
     document.getElementById('task_manager')
 );
