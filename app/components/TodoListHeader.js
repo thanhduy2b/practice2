@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TodoListHeader(props) {
+export default function TodoListHeader() {
   const version = {
     major: 1,
     minor: 0
