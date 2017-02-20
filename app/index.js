@@ -4,11 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import todoApp from './reducers';
-
 import App from './components/App';
 import Home from './components/Home';
 import VisibleTodoDetail from './containers/VisibleTodoDetail';
-import TodoForm from './components/TodoForm';
+import TodoForm from './containers/TodoForm';
 
 const store = createStore(todoApp);
 

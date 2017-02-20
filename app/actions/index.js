@@ -1,11 +1,11 @@
-let nextTodoId = 0;
+let nextTodoId = 1;
 
-export const addTodo = (text) => {
+export const addTodo = (text, effort=0) => {
   return {
     type: 'ADD_TODO',
     id: nextTodoId++,
     text,
-    effort: 0
+    effort
   };
 };
 
