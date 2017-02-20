@@ -24,7 +24,6 @@ html, body, input, button {
   padding: .25em .5em;
   border-radius: .2em;
   background: #f3f3f3;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -34,8 +33,7 @@ html, body, input, button {
   background: #71B7FF;
   color: #fff;
   padding: .25em .5em;
-  margin: .5em 0;
-  margin-right: .25em;
+  margin: .5em .25em;
   cursor: pointer;
 }
 

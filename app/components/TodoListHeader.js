@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class TodoListHeader extends Component {
-  render() {
-		const version = {
-			major: 0,
-			minor: 1
-		};
+export default function TodoListHeader(props) {
+  const version = {
+    major: 0,
+    minor: 1
+  };
 
-		return (
-			<div>
-				<h1>Task Manager v.{version.major}.{version.minor}</h1>
-			</div>
-		);
-	}
+  return (
+    <div>
+      <h2>Task Manager v.{version.major}.{version.minor}</h2>
+    </div>
+  );
 }
-
-export default TodoListHeader;
