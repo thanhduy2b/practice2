@@ -11,4 +11,4 @@ export default function TodoListHeader(props) {
       <h2>Task Manager v.{version.major}.{version.minor}</h2>
     </div>
   );
-}
+};

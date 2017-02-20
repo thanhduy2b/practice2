@@ -1,16 +1,13 @@
-import React from 'react'
-import TodoListHeader from './TodoListHeader'
-import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import React from 'react';
+import { Link } from 'react-router';
+import TodoListHeader from './TodoListHeader';
 
-const App = () => (
-  <div>
-    <TodoListHeader />
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
-)
-
-export default App
+export default function App(props) {
+  return (
+    <div>
+      <Link to='/'>Home</Link>
+      <TodoListHeader />
+      {props.children}
+    </div>
+  );
+};
