@@ -6,10 +6,10 @@ import VisibleTodoList from '../containers/VisibleTodoList';
 
 const Home = () => (
   <div>
+    <Link to="/create">Create New Task</Link>
     <AddTodo />
     <VisibleTodoList />
     <Footer />
-    <Link to="/create">Create New Task</Link>
   </div>
 );
 
