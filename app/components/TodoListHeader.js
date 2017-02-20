@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function TodoListHeader(props) {
   const version = {
-    major: 0,
-    minor: 1
+    major: 1,
+    minor: 0
   };
 
   return (
     <div>
-      <h2>Task Manager v.{version.major}.{version.minor}</h2>
+      <h2>Task Manager {version.major}.{version.minor}</h2>
     </div>
   );
 };

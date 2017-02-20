@@ -17,13 +17,13 @@ let AddTodo = ({ dispatch }) => {
       }}>
         <input
           className='todo__entry'
-          placeholder='Add todo'
+          placeholder='Todo'
           ref={node => {
             input = node
           }} />
         <button className='todo__button'
           type="submit">
-          Add
+          Quick Add
         </button>
       </form>
     </div>
